@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
+  base: '/Project-H-Skillmaker/', // <— bunu ekle
   plugins: [
     react({
       include: '**/*.{jsx,tsx}',
@@ -18,4 +19,3 @@ export default defineConfig({
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
   },
 })
-
